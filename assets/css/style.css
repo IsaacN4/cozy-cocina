@@ -1,2 +1,86 @@
 @charset "utf-8";
 
+body {
+    font-family:'Cinzel', 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+  
+.logo {
+    font-size: 1.5rem;
+}
+  
+button {
+    padding: 0.5rem 1rem;
+    background-color: #f4a261;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+  
+.products, .contact {
+    padding: 2rem;
+}
+  
+.product {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+  
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+  
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.hidden {
+    display: none;
+}
+  
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+  
+.modal-close {
+    float: right;
+    cursor: pointer;
+    color: red;
+}
+  
+.form-message {
+    color: green;
+    margin-top: 1rem;
+}
+  
