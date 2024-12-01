@@ -6,6 +6,15 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #659dea;
+}
+
 .container {
     position: relative;
     padding-top: 3.5em;
@@ -65,10 +74,10 @@ main {
     align-items: center;
     justify-content: center;
     background-image: url("../img/banner1.jpg");
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -76,13 +85,12 @@ main {
 
 .banner h1 {
     color: #fff;
-    font-size: 2.75em;
+    font-size: 3em;
 }
 
 .banner .inner {
     opacity: 1;
     position: relative;
-    z-index: 2;
 }
   
 .button {
@@ -112,7 +120,7 @@ main {
 }
 
 .button:hover {
-    background-color: #65caea;
+    background-color: #EDD0CB;
 }
   
 .products, .contact {
@@ -123,6 +131,10 @@ main {
     display: inline-block;
     margin: 1rem;
     text-align: center;
+}
+
+.product-list {
+    font-family: 'Open Sans';
 }
   
 footer {
@@ -154,16 +166,96 @@ footer {
     border-radius: 5px;
     width: 300px;
     text-align: center;
+    font-family: 'Open Sans';
+}
+
+.login {
+    border-radius: 5px;
+    padding: 0.3em 1em 0.3em 1em;
+    margin-top: 1em;
 }
   
 .modal-close {
     float: right;
     cursor: pointer;
-    color: red;
+    color: #333;
 }
   
 .form-message {
     color: green;
     margin-top: 1rem;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.contact h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+  
+.contact-form {
+    font-family: 'Open Sans';
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+  
+.contact-form label {
+    font-weight: bold;
+    color: #555;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+  
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f4a261;
+    outline: none;
+    box-shadow: 0 0 4px rgba(244, 162, 97, 0.5);
+}
+  
+
+.contact-form button {
+    background-color: #f4a261;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.contact-form button:hover {
+    background-color: #e76f51;
+}
+  
+
+.form-message {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: green;
+}
+
+.message {
+    resize: none;
 }
   

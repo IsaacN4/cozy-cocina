@@ -1,6 +1,6 @@
 'use strict';
 
-document.querySelector(".login-btn").addEventListener("click", function () {
+document.querySelector(".button").addEventListener("click", function () {
     document.querySelector(".modal").classList.remove("hidden");
 });
   
