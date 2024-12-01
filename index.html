@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewpoint" content="width=device-width, intial-scale=1">
     <meta name="author" content="Isaac Nunez">
@@ -10,80 +11,90 @@
     <link rel="icon" href="./assets/img/Original Logo Symbol.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
     <link rel="stylesheet" href="./assets/css/style.css" media="all">
     <script src="./assets/js/script.js" defer></script>
-  </head>
-  <body>
-  <div class="container">
-    <header class="header">
-        <div class="logo">
-            <a href="index.html" ><img src="./assets/img/Original Logo Symbol.png" width="50px"></a>
-            <span>Cozy Cocina</span>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html"><img src="./assets/img/Original Logo Symbol.png" width="50px"></a>
+                <span>Cozy Cocina</span>
+            </div>
+            <button class="button">Login</button>
+        </header>
+
+        <section class="banner">
+            <div class="inner">
+                <div class="banner-header">
+                    <h1>Cozy Cocina</h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal hidden">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                </form>
+                <button class="login" type="submit">Login</button>
+            </div>
         </div>
-        <button class="button">Login</button>
-	</header>
 
-	  <section class="banner">
-		<div class="inner">
-		  <div class="banner-header">
-			<h1>Cozy Cocina</h1>
-          </div>
-	    </div>
-	  </section>
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <a href="details.html"><img src="./assets/img/toaster.jpg" alt="Toaster"></a>
+                    <a href="details.html">
+                        <h3>Deluxe Toaster</h3>
+                    </a>
+                    <p>$49.99</p>
+                    <a href="details.html">View Details</a>
+                </div>
+                <div class="product">
+                    <a href=""><img src="./assets/img/mixer.jpg" alt="Mixer"></a>
+                    <a href="">
+                        <h3>Stand Mixer</h3>
+                    </a>
+                    <p>$199.99</p>
+                    <a href="">View Details</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="modal hidden">
-      <div class="modal-content">
-        <span class="modal-close">&times;</span>
-        <h2>Login</h2>
-        <form>
-          <input type="text" placeholder="Username" required>
-          <input type="password" placeholder="Password" required>
-        </form>
-        <button class="login" type="submit">Login</button>
-      </div>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" class="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+                <p class="form-message">&nbsp;</p>
+            </form>
+        </section>
+
     </div>
-
-      <section class="products">
-        <h2>Our Products</h2>
-        <div class="product-list">
-          <div class="product">
-            <a href="details.html"><img src="./assets/img/toaster.jpg" alt="Toaster"></a>
-            <a href="details.html"><h3>Deluxe Toaster</h3></a>
-            <p>$49.99</p>
-            <a href="details.html">View Details</a>
-          </div>
-          <div class="product">
-            <a href=""><img src="./assets/img/mixer.jpg" alt="Mixer"></a>
-            <a href=""><h3>Stand Mixer</h3></a>
-            <p>$199.99</p>
-            <a href="">View Details</a>
-          </div>
-        </div>
-      </section>
-  
-      <section class="contact">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" class="name" name="name" required>
-  
-          <label for="email">Email:</label>
-          <input type="email" id="email" class="email" name="email" required>
-  
-          <label for="message">Message:</label>
-          <textarea id="message" class="message" name="message" required></textarea>
-  
-          <button type="submit">Send</button>
-          <p class="form-message">&nbsp;</p>
-        </form>
-      </section>
-
     <footer>
-      <p>&copy; 2024 Cozy Cocina. All rights reserved.</p>
+        <p>&copy; 2024 Cozy Cocina. All rights reserved.</p>
     </footer>
-  </div>
-  </body>
+</body>
+
 </html>

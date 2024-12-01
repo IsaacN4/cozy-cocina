@@ -142,6 +142,7 @@ footer {
     padding: 1rem;
     background-color: #333;
     color: #fff;
+    margin: 0;
 }
   
 .modal {
@@ -258,4 +259,42 @@ footer {
 .message {
     resize: none;
 }
-  
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price {
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.buy-button, .cart-button {
+    transition: 
+      background-color 0.2s ease-in-out, 
+      color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: 'Open Sans';
+    height: 3.75em;
+    letter-spacing: 0.25em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    min-width: 10em;
+    background-color: #dbd7d2;
+    box-shadow: none;
+    color: #333;
+    margin: 2rem;
+    padding: 0 2rem;
+}
+
+.buy-button:hover, .cart-button:hover {
+    background-color: #EDD0CB;
+}

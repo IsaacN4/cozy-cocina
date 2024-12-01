@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewpoint" content="width=device-width, intial-scale=1">
     <meta name="author" content="Isaac Nunez">
@@ -10,44 +10,63 @@
     <link rel="icon" href="./assets/img/Original Logo Symbol.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
     <link rel="stylesheet" href="./assets/css/style.css" media="all">
     <script src="./assets/js/script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <div class="logo">Cozy Cocina</div>
-      <button class="login-btn">Login</button>
-    </header>
-  
-    <div class="modal hidden">
-      <div class="modal-content">
-        <span class="modal-close">&times;</span>
-        <h2>Login</h2>
-        <form>
-          <input type="text" placeholder="Username" required>
-          <input type="password" placeholder="Password" required>
-          <button type="submit">Login</button>
-        </form>
-      </div>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html"><img src="./assets/img/Original Logo Symbol.png" width="50px"></a>
+                <span>Cozy Cocina</span>
+            </div>
+            <button class="button">Login</button>
+        </header>
+
+        <div class="modal hidden">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                </form>
+                <button class="login" type="submit">Login</button>
+            </div>
+        </div>
+
+        <main>
+            <section class="product-detail">
+                <img src="./assets/img/toaster.jpg" alt="Deluxe Toaster">
+                <div class="product-section">
+                    <div class="product-desc">
+                        <h1>Deluxe Toaster</h1>
+                        <p class="price">$49.99</p>
+                        <p>
+                            This deluxe toaster comes with two slots, multiple settings, and a
+                            sleek design perfect for any kitchen.
+                        </p>
+                    </div>
+                    <div>
+                        <button class="buy-button">Buy Now</button>
+                        <button class="cart-button">Add to cart</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
     </div>
-  
-    <main>
-      <section class="product-detail">
-        <img src="./assets/img/toaster.jpg" alt="Deluxe Toaster">
-        <h1>Deluxe Toaster</h1>
-        <p>Price: $49.99</p>
-        <p>
-          This deluxe toaster comes with two slots, multiple settings, and a 
-          sleek design perfect for any kitchen.
-        </p>
-      </section>
-    </main>
-  
-  </body>
-  <footer>
-    <p>&copy; 2024 Cozy Cocina. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2024 Cozy Cocina. All rights reserved.</p>
+    </footer>
+</body>
+
 </html>
